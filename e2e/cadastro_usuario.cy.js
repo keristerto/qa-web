@@ -20,7 +20,7 @@ beforeEach('Acessar cadastro de usuario',()=> {
         cadastro_usuario_page.validarMensagemErro('O campo e-mail deve ser prenchido corretamente')  
         
     })
-      it('Campo e-mail inválido new'2 ,()=>{
+      it('Campo e-mail inválido new',()=>{
       cadastro_usuario_page.preencheNome(faker.person.firstName())
       cadastro_usuario_page.preencheEmail('emailinvalido')
       cadastro_usuario_page.clicarCadastrar()
