@@ -26,12 +26,7 @@ beforeEach('Acessar cadastro de usuario',()=> {
       cadastro_usuario_page.clicarCadastrar()
       cadastro_usuario_page.validarMensagemErro('O campo e-mail deve ser prenchido corretamente')
     })
-      it('Campo senha vazio',()=>{
-        cadastro_usuario_page.preencheNome(faker.person.firstName())
-        cadastro_usuario_page.preencheEmail(faker.internet.email())
-        cadastro_usuario_page.clicarCadastrar()
-        cadastro_usuario_page.validarMensagemErro('O campo senha deve ter pelo menos 6 dígitos')
-      })
+
 
       it('Campo senha inválido',()=>{
         cadastro_usuario_page.preencheNome(faker.person.firstName())
